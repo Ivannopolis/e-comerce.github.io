@@ -1,0 +1,134 @@
+* {
+    margin: 0px;
+}
+
+:root {
+    --CbarNav1: rgb(210, 210, 210);
+    --CbarNav2: red;
+    --CbarNav3: #041041;
+    --CbarNav4: #04225c;
+    --CbarNav5: rgb(243, 243, 243);
+    --CbarNav6: #FF8C42;
+
+
+    /*Color BarNav mas claro 30578D*/
+
+    --CSourisSur: #8c949c;
+    --CClickSur: #bec2c6;
+    --CBackBox: #F0F0F0;
+
+    --MargExtLire: 20%;
+    --MargIntLire: 10px;
+    --CLire: #f7ca00;
+
+    --CTextH1: black;
+    --CTextH2: #474B4E;
+
+}
+
+nav {
+    width: 100%;
+    margin: 0;
+    background-color: var(--CbarNav3);
+    /*NavBar prinsipal*/
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+}
+
+
+nav ul li {
+    float: left;
+    width: 20%;
+    text-align: center;
+    position: relative;
+}
+
+
+nav ul::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: var(--CbarNav1);
+    /*Texte general*/
+    border-bottom: 2px solid transparent;
+    padding: 15px 0px;
+    font-weight: 200;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+
+nav a:hover {
+    color: var(--CbarNav5);
+    /*Texte quand on met le courseur*/
+
+    border-bottom: 2px solid var(--CbarNav4);
+    font-weight: bold;
+    background-color: var(--CbarNav4);
+
+}
+
+nav i:hover {
+    color: orange;
+    border-bottom: 2px solid gold;
+
+}
+
+.sous {
+    display: none;
+    box-shadow: 0px 1px 2px #CCC;
+    background-color: var(--CbarNav4);
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav>ul li:hover .sous {
+    display: block;
+}
+
+.sous li {
+    float: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sous a {
+    padding: 10px;
+    border-bottom: none;
+}
+
+.sous a:hover {
+    border-bottom: none;
+
+}
+
+.deroulant>a::after {
+    font-size: 12px;
+}
+
+
+.conteneur {
+    margin: 50px 20px;
+    height: 1500px;
+}
+
+
+
+.orange a {
+    color: var(--CbarNav6);
+    font-weight: bold;
+}
